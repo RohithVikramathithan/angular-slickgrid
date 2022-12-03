@@ -1,0 +1,77 @@
+{
+  "name": "angular-slickgrid",
+  "version": "5.1.2",
+  "description": "Slickgrid components made available in Angular",
+  "keywords": [
+    "angular",
+    "plugin",
+    "datagrid",
+    "datatable",
+    "slickgrid"
+  ],
+  "license": "MIT",
+  "author": "Ghislain B.",
+  "homepage": "https://ghiscoding.github.io/Angular-Slickgrid/",
+  "bugs": {
+    "url": "https://github.com/ghiscoding/Angular-Slickgrid/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "http://github.com/ghiscoding/angular-slickgrid"
+  },
+  "main": "src/app/modules/angular-slickgrid/index",
+  "private": false,
+  "comments": {
+    "new-release": "1- build library (ng-packagr), 2- 'prepare-release' (npm script) and push git tag, 3- copy new version prop into dist/package.json, 4- run script 'pack-lib' and 'npm publish [tar tgz]'"
+  },
+  "funding": {
+    "type": "ko_fi",
+    "url": "https://ko-fi.com/ghiscoding"
+  },
+  "dependencies": {
+    "@slickgrid-universal/common": "~2.1.2",
+    "@slickgrid-universal/custom-footer-component": "~2.1.2",
+    "@slickgrid-universal/empty-warning-component": "~2.1.2",
+    "@slickgrid-universal/event-pub-sub": "~2.1.2",
+    "@slickgrid-universal/pagination-component": "~2.1.2",
+    "@slickgrid-universal/row-detail-view-plugin": "~2.1.2",
+    "@slickgrid-universal/rxjs-observable": "~2.1.2",
+    "@types/jquery": "^3.5.14",
+    "dequal": "^2.0.3",
+    "dompurify": "^2.4.1",
+    "jquery": "^3.6.1",
+    "rxjs": ">=7.5.0",
+    "sortablejs": "^1.15.0",
+    "tslib": "^2.3.0"
+  },
+  "peerDependencies": {
+    "@ngx-translate/core": ">=14.0.0"
+  },
+  "engines": {
+    "node": ">=14.17.0",
+    "npm": ">=6.14.13"
+  },
+  "resolutions": {
+    "caniuse-lite": "1.0.30001435"
+  },
+  "module": "fesm2015/angular-slickgrid.mjs",
+  "es2020": "fesm2020/angular-slickgrid.mjs",
+  "esm2020": "esm2020/angular-slickgrid.mjs",
+  "fesm2020": "fesm2020/angular-slickgrid.mjs",
+  "fesm2015": "fesm2015/angular-slickgrid.mjs",
+  "typings": "index.d.ts",
+  "exports": {
+    "./package.json": {
+      "default": "./package.json"
+    },
+    ".": {
+      "types": "./index.d.ts",
+      "esm2020": "./esm2020/angular-slickgrid.mjs",
+      "es2020": "./fesm2020/angular-slickgrid.mjs",
+      "es2015": "./fesm2015/angular-slickgrid.mjs",
+      "node": "./fesm2015/angular-slickgrid.mjs",
+      "default": "./fesm2020/angular-slickgrid.mjs"
+    }
+  },
+  "sideEffects": false
+}

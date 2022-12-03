@@ -1,0 +1,17 @@
+/**
+ * Unsubscribe all Observables Subscriptions
+ * It will return an empty array if it all went well
+ * @param subscriptions
+ */
+export function unsubscribeAllObservables(subscriptions) {
+    if (Array.isArray(subscriptions)) {
+        subscriptions.forEach((subscription) => {
+            if (subscription && subscription.unsubscribe) {
+                subscription.unsubscribe();
+            }
+        });
+        subscriptions = [];
+    }
+    return subscriptions;
+}
+//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoidXRpbGl0aWVzLmpzIiwic291cmNlUm9vdCI6IiIsInNvdXJjZXMiOlsiLi4vLi4vLi4vLi4vLi4vLi4vc3JjL2FwcC9tb2R1bGVzL2FuZ3VsYXItc2xpY2tncmlkL3NlcnZpY2VzL3V0aWxpdGllcy50cyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFFQTs7OztHQUlHO0FBQ0gsTUFBTSxVQUFVLHlCQUF5QixDQUFDLGFBQTZCO0lBQ3JFLElBQUksS0FBSyxDQUFDLE9BQU8sQ0FBQyxhQUFhLENBQUMsRUFBRTtRQUNoQyxhQUFhLENBQUMsT0FBTyxDQUFDLENBQUMsWUFBMEIsRUFBRSxFQUFFO1lBQ25ELElBQUksWUFBWSxJQUFJLFlBQVksQ0FBQyxXQUFXLEVBQUU7Z0JBQzVDLFlBQVksQ0FBQyxXQUFXLEVBQUUsQ0FBQzthQUM1QjtRQUNILENBQUMsQ0FBQyxDQUFDO1FBQ0gsYUFBYSxHQUFHLEVBQUUsQ0FBQztLQUNwQjtJQUVELE9BQU8sYUFBYSxDQUFDO0FBQ3ZCLENBQUMiLCJzb3VyY2VzQ29udGVudCI6WyJpbXBvcnQgeyBTdWJzY3JpcHRpb24gfSBmcm9tICdyeGpzJztcclxuXHJcbi8qKlxyXG4gKiBVbnN1YnNjcmliZSBhbGwgT2JzZXJ2YWJsZXMgU3Vic2NyaXB0aW9uc1xyXG4gKiBJdCB3aWxsIHJldHVybiBhbiBlbXB0eSBhcnJheSBpZiBpdCBhbGwgd2VudCB3ZWxsXHJcbiAqIEBwYXJhbSBzdWJzY3JpcHRpb25zXHJcbiAqL1xyXG5leHBvcnQgZnVuY3Rpb24gdW5zdWJzY3JpYmVBbGxPYnNlcnZhYmxlcyhzdWJzY3JpcHRpb25zOiBTdWJzY3JpcHRpb25bXSk6IFN1YnNjcmlwdGlvbltdIHtcclxuICBpZiAoQXJyYXkuaXNBcnJheShzdWJzY3JpcHRpb25zKSkge1xyXG4gICAgc3Vic2NyaXB0aW9ucy5mb3JFYWNoKChzdWJzY3JpcHRpb246IFN1YnNjcmlwdGlvbikgPT4ge1xyXG4gICAgICBpZiAoc3Vic2NyaXB0aW9uICYmIHN1YnNjcmlwdGlvbi51bnN1YnNjcmliZSkge1xyXG4gICAgICAgIHN1YnNjcmlwdGlvbi51bnN1YnNjcmliZSgpO1xyXG4gICAgICB9XHJcbiAgICB9KTtcclxuICAgIHN1YnNjcmlwdGlvbnMgPSBbXTtcclxuICB9XHJcblxyXG4gIHJldHVybiBzdWJzY3JpcHRpb25zO1xyXG59XHJcbiJdfQ==
