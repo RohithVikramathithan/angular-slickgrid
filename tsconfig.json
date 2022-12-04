@@ -14,6 +14,7 @@
     "noImplicitReturns": true,
     "emitDecoratorMetadata": true,
     "experimentalDecorators": true,
+    "types": ["node"],
     "target": "es2020",
     "typeRoots": [
       "node_modules/@types",

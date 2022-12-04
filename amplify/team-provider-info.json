@@ -1,0 +1,15 @@
+{
+  "dev": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-angularslickgrid-dev-113706-authRole",
+      "UnauthRoleArn": "arn:aws:iam::330135245840:role/amplify-angularslickgrid-dev-113706-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::330135245840:role/amplify-angularslickgrid-dev-113706-authRole",
+      "Region": "us-east-1",
+      "DeploymentBucketName": "amplify-angularslickgrid-dev-113706-deployment",
+      "UnauthRoleName": "amplify-angularslickgrid-dev-113706-unauthRole",
+      "StackName": "amplify-angularslickgrid-dev-113706",
+      "StackId": "arn:aws:cloudformation:us-east-1:330135245840:stack/amplify-angularslickgrid-dev-113706/e4583550-7399-11ed-9869-12db10b1a56b",
+      "AmplifyAppId": "d31w8bea78pdut"
+    }
+  }
+}
